@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>John Barclay-Morton — JavaScript Assignment</title>
+		<link rel="stylesheet" style type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<!-- 
+			I don't know how to target the string I create through the prompt, while also writing it inside the h1 tag 
+			 prompt is a function so it needs to be defined as a variable where the output can be stored and used, it is called 'latin' now
+			 Ah, I have to redefine the variable latin and name it in the functions, instead of using the generic placeholder str
+		-->
+		
+		<h1 id="reply">My secret favorite color is </h1>
+		
+		<script type= "text/javascript">
+			
+			
+			var latin = prompt("What is your favorite color?");
+			
+			latin = latin.slice (1, latin.length) + latin.charAt(0) + ("ay.");
+			
+			document.getElementById("reply").innerHTML += latin;
+			
+		</script>
+			
+	</body>
+</html>
